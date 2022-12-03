@@ -1,5 +1,5 @@
 {
-    "name": "siktec/frigateapp",
+    "name": "siktec/frigate-bootstrap",
     "type": "project",
     "license": "MIT",
     "autoload": {

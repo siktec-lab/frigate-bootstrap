@@ -21,10 +21,9 @@ use \Siktec\App\Api\Endpoints\FileHandle;
 /*****************************************************
  * Init Frigate Application:
  *****************************************************/
-
 Base::init(
     config      : __DIR__,  //path to .env file - required
-    connect     : false,     // Connect to database - will die if connection fails 
+    connect     : false,    // Connect to database - will die if connection fails 
     session     : true,     // Start a session if not already started
     page_buffer : true      // Buffer output will capture all unexpected output until the end of the script
 );
