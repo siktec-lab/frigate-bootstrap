@@ -1,0 +1,16 @@
+#  Make sure we have mod_rewrite
+Options -Indexes
+
+# Hide a environment file
+<Files .env>
+    Order allow,deny
+    Deny from all
+</Files>
+
+RewriteEngine On 
+
+# RewriteRule . api.php
+RewriteBase /homevr-dashboard/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]

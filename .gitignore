@@ -1,0 +1,13 @@
+
+/vendor/
+.env
+.vscode
+php_errors.log
+*.zip
+/temp/
+pages/templates/cache/
+homevr-dashboard.code-workspace
+/files/
+composer.lock
+frigate-start.code-workspace
+test.php

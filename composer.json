@@ -1,0 +1,22 @@
+{
+    "name": "siktec/frigateapp",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "classmap": [
+            "api/",
+            "pages/"
+        ]
+    },
+    "repositories": [
+    ],
+    "require": {
+        "siktec/frigate": "dev-master",
+        "twbs/bootstrap": "^5.2",
+        "components/jquery": "^3.6"
+    },
+    "scripts": {
+		
+    },
+    "minimum-stability": "dev"
+}
