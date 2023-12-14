@@ -9,8 +9,12 @@ Options -Indexes
 
 RewriteEngine On 
 
+# allow HTTP basic authentication
+RewriteCond %{HTTP:Authorization} ^(.+)$
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
 # RewriteRule . api.php
-RewriteBase /homevr-dashboard/
+RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . index.php [L]
